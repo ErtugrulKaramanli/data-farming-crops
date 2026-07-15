@@ -5,7 +5,7 @@ and checked for ripeness.
 """
 
 from farm.corn import Corn
-
+from farm.rice import Rice
 
 print("\n\n📝 Day One: Corn")
 
@@ -23,9 +23,6 @@ if corn_crop.ripe():
     print("The corn crop is ripe")
 else:
     print("The corn crop is not ripe")
-
-from farm.rice import Rice
-
 
 print("\n\n📝 Day Two: Rice")
 

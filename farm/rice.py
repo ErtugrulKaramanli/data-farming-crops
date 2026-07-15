@@ -1,16 +1,23 @@
-class Rice:
-    def __init__(self):
-        # grains değişkeni sıfırla başlar
-        self.grains = 0
+"""
+This module defines the Rice crop class.
+"""
+
+from farm.crop import Crop
+
+
+class Rice(Crop):
+    """
+    Represents a rice crop, inheriting basic traits from Crop.
+    """
 
     def water(self):
-        # water metodu yalnızca 5 grains ekler
+        """
+        Waters the rice crop, increasing its grains by 5.
+        """
         self.grains += 5
 
-    def ripe(self):
-        # Corn ile aynı davranış: grain sayısı en az 15 ise True, değilse False
-        return self.grains >= 15
-
     def transplant(self):
-        # Rice sınıfına özel transplant metodu: 10 grain ekler
+        """
+        Transplants the rice crop, adding an extra 10 grains.
+        """
         self.grains += 10

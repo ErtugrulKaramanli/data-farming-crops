@@ -1,12 +1,17 @@
-class Corn:
-    def __init__(self):
-        # grains isimli instance variable sıfırla başlatılır
-        self.grains = 0
+"""
+This module defines the Corn crop class.
+"""
+
+from farm.crop import Crop
+
+
+class Corn(Crop):
+    """
+    Represents a corn crop, inheriting basic traits from Crop.
+    """
 
     def water(self):
-        # her çağrıldığında 10 tane grain ekler
+        """
+        Waters the corn crop, increasing its grains by 10.
+        """
         self.grains += 10
-
-    def ripe(self):
-        # grain sayısı en az 15 ise True, değilse False döner
-        return self.grains >= 15
