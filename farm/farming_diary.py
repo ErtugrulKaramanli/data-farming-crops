@@ -24,19 +24,25 @@ if corn_crop.ripe():
 else:
     print("The corn crop is not ripe")
 
+from farm.rice import Rice
+
+
 print("\n\n📝 Day Two: Rice")
 
 # 1. Instantiate a rice crop
-pass  # YOUR CODE HERE
+rice_crop = Rice()
 
 # 2. Water the rice crop
-pass  # YOUR CODE HERE
+rice_crop.water()
 
 # 3. Transplant the rice crop
-pass  # YOUR CODE HERE
+rice_crop.transplant()
 
 # 4. Print "The rice crop produced ## grains"
-pass  # YOUR CODE HERE
+print(f"The rice crop produced {rice_crop.grains} grains")
 
 # 5. Print "The rice crop is ripe" or "The rice crop is not ripe"
-pass  # YOUR CODE HERE
+if rice_crop.ripe():
+    print("The rice crop is ripe")
+else:
+    print("The rice crop is not ripe")
